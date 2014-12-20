@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/home/jonathan/Android/ASworkspace/QuoteBook/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="accent">#0099FF</color>
+    <color name="primary">#009999</color>
+    <color name="primary_dark">#005C5C</color>
     <!-- From: file:/home/jonathan/Android/ASworkspace/QuoteBook/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -18,7 +23,16 @@
             backward-compatibility can go here.
         -->
     </style>
-    <style name="AppTheme" parent="AppBaseTheme">
+    <style name="AppTheme" parent="android:Theme.Material">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+    <style name="AppThemeOriginal" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 </resources>
