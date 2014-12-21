@@ -1,4 +1,0 @@
-/home/jonathan/Android/ASworkspace/QuoteBook/app/build/intermediates/classes/debug
-/home/jonathan/Android/ASworkspace/QuoteBook/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-5bfb24337af240efc5ec5da72d4710fcf6272d18.jar
-/home/jonathan/Android/ASworkspace/QuoteBook/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-abaa6f80a13e79c4ea2a3b5d44735a6ac9a0ba83.jar
-/home/jonathan/Android/ASworkspace/QuoteBook/app/build/intermediates/pre-dexed/debug/classes-d2c3c64929f140fa86dec548731f0f2f872cf77b.jar
