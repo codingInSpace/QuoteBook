@@ -30,6 +30,24 @@ public class MyDBHandler extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_QUOTES);
+        onCreate(db);
+    }
 
+    //add new quote to db
+    public void addQuote(Quote quote) {
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_QUOTETEXT, quote.get_quotetext());
+        values.put(COLUMN_AUTHOR, quote.get_author());
+
+        SQLiteDatabase db = getWritableDatabase();
+        db.insert(TABLE_QUOTES, null, values);
+        db.close();
+    }
+
+    //delete quote form db
+    public void deleteQuote(String quoteText) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_QUOTES + " WHERE " + COLUMN_QUOTETEXT + "=\"" + quoteText + "\";");
     }
 }
